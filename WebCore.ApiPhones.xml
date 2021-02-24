@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebCore.ApiPhones</name>
+    </assembly>
+    <members>
+        <member name="M:WebCore.ApiPhones.Controllers.PhoneBookController.GetPhoneBookByPhone(System.String)">
+            <summary>
+            Получить абонентов телефонного справочника по первым цифрам номера телефона (только цифры, без пробелов)
+            </summary>
+            <param name="phone">первые цифры номера телефона</param>
+            <returns>объект</returns>
+        </member>
+        <member name="M:WebCore.ApiPhones.Controllers.PhoneBookController.GetPhoneBookByUnitID(System.String)">
+            <summary>
+            Получить абонентов телефонного справочника по идентификатору подразделения
+            </summary>
+            <param name="unitID">идентификатор подразделения</param>
+            <returns>объект</returns>
+        </member>
+        <member name="M:WebCore.ApiPhones.Controllers.PhoneBookController.GetPhoneBookByLastName(System.String)">
+            <summary>
+            Получить абонентов телефонного справочника по первым буквам фамилии
+            </summary>
+            <param name="lastname">первые буквы фамилии</param>
+            <returns>объект</returns>
+        </member>
+        <member name="M:WebCore.ApiPhones.Controllers.PhoneBookController.Index">
+            <summary>
+            Получить всех абонентов телефонного справочника
+            </summary>
+            <returns>объект</returns>
+        </member>
+        <member name="M:WebCore.ApiPhones.Controllers.PhotoController.PhotoByldAsync(System.String)">
+            <summary>
+            получить фотографию
+            </summary>
+            <param name="id">ид физлица</param>
+            <returns>фотография</returns>
+        </member>
+        <member name="M:WebCore.ApiPhones.Controllers.SwaggerController.Index">
+            <summary>
+            Перенаправление на swagger
+            </summary>
+            <returns>объект</returns>
+        </member>
+        <member name="M:WebCore.ApiPhones.Controllers.UnitController.Index">
+            <summary>
+            Получить список всех отделов, в которых работают сотрудники. Сортировка по алфавиту
+            </summary>
+            <returns>объект</returns>
+        </member>
+        <member name="T:WebCore.ApiPhones.Services.OracleService">
+            <summary>
+            Сервис для работы с Oracle
+            </summary>
+        </member>
+        <member name="M:WebCore.ApiPhones.Services.OracleService.GetPhoneBookRaw(System.String)">
+            <summary>
+            получить не сгруппированные данные о абонентах телефонного справочника
+            </summary>
+        </member>
+        <member name="M:WebCore.ApiPhones.Services.OracleService.GetPhoneBookByLastName(System.String)">
+            <summary>
+            получить не сгруппированные данные о абонентах телефонного справочника по фамилии
+            </summary>
+        </member>
+        <member name="M:WebCore.ApiPhones.Services.OracleService.GetPhoneBookByPhone(System.String)">
+            <summary>
+            получить не сгруппированные данные о абонентах телефонного справочника по номеру телефона
+            </summary>
+        </member>
+        <member name="M:WebCore.ApiPhones.Services.OracleService.GetPhoneBookByUnitID(System.String)">
+            <summary>
+            получить не сгруппированные данные о абонентах телефонного справочника по идентификатору подразделения
+            </summary>
+        </member>
+        <member name="M:WebCore.ApiPhones.Services.OracleService.GetPhoto(System.String)">
+            <summary>
+            получить фотографию
+            </summary>
+            <param name="id">ид физлица</param>
+        </member>
+    </members>
+</doc>
